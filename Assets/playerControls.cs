@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,11 +9,14 @@ public class playerControls : MonoBehaviour
     public float jumps;
     bool isJumping;
     Rigidbody2D rg;
+	
+	GameManager gm;
 
     // Start is called before the first frame update
     void Start()
     {
         rg = GetComponent<Rigidbody2D>();
+	   gm = GameObject.Find("GameManager").GetComponent<GameManager> ();
     }
 
     // Update is called once per frame
@@ -28,6 +31,20 @@ public class playerControls : MonoBehaviour
         rg.velocity = new Vector2(speed * move, rg.velocity.y);
         Jump();
     }
+
+	void OnTriggerEnter2D(Collider2D other)
+	
+    {
+	if(other.tag == "Coin")
+
+    	{
+        gm.CoinsCollected();
+	   Destroy(other.gameObject);
+   	 }
+
+        
+    }
+
 
     void Jump()
     {
