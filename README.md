@@ -1,2 +1,0 @@
-# 2DGame
-Software Project
