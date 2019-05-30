@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - reSpawn
+  - superJump
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4282640323
+    locked: 0
+  - name: ground
+    uniqueID: 404437881
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PauseMenu
+    uniqueID: 4205616759
     locked: 0

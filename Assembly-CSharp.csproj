@@ -56,7 +56,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CameraFollow.cs" />
+     <Compile Include="Assets\enemyKill.cs" />
+     <Compile Include="Assets\jumpBoost.cs" />
+     <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\nextLevel.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\playerControls.cs" />
      <Compile Include="Assets\respawning.cs" />
  <Reference Include="Unity.Timeline.Editor">
